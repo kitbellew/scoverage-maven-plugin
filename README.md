@@ -278,7 +278,12 @@ Read [SBT SCoverage Plugin documentation](https://github.com/scoverage/sbt-scove
                 <artifactId>scoverage-maven-plugin</artifactId>
                 <version>${scoverage.plugin.version}</version>
                 <configuration>
-                    <minimumCoverage>80</minimumCoverage>
+                    <minimumCoverage>95</minimumCoverage>
+                    <minimumBranchCoverageTotal>90</minimumBranchCoverageTotal>
+                    <minimumStmtCoveragePerPackage>90</minimumStmtCoveragePerPackage>
+                    <minimumBranchCoveragePerPackage>85</minimumBranchCoveragePerPackage>
+                    <minimumStmtoveragePerFile>85</minimumStmtoveragePerFile>
+                    <minimumBranchCoveragePerFile>80</minimumBranchCoveragePerFile>
                     <failOnMinimumCoverage>true</failOnMinimumCoverage>
                 </configuration>
                 <executions>
